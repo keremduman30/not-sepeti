@@ -3,9 +3,7 @@ const yeniGorevBtnEkle = document.querySelector(".btn-gorev-ekle");
 const gorevListesi = document.querySelector(".gorev-listesi");
 yeniGorevBtnEkle.addEventListener("click", gorevEkle);
 gorevListesi.addEventListener("click", gorevSil);
-
 document.addEventListener("DOMContentLoaded", localStorageOku);
-
 
 function gorevItemOlustur(gorev) {
     const gorevDiv = document.createElement("div");
@@ -13,7 +11,6 @@ function gorevItemOlustur(gorev) {
     const gorevLi = document.createElement("li");
     gorevLi.classList.add("gorev-tanim");
     gorevLi.innerText = gorev;
-
     gorevDiv.appendChild(gorevLi);
 
     gorevListesi.appendChild(gorevDiv);
